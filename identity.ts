@@ -6,7 +6,7 @@ type B = {
   property: number;
 }
 
-// A → B, read as a function from type A to type B
+// A → B, i.e. a function from type A to type B
 type AtoB = {
   (a: A): B; 
 }
