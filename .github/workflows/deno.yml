@@ -1,0 +1,29 @@
+name: Deno
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+permissions:
+  contents: read
+
+jobs:
+  check-and-examples:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v3
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Run linter
+        run: deno lint
+
+      - name: Run examples
+        run: deno run --import-map=import_map.json examples/examples.ts
