@@ -1,0 +1,20 @@
+// Deno configuration file for lambda-calculus project
+// Updated for Deno 2 compatibility: uses 'include' for lint, removes deprecated compiler options
+{
+  // Path to the import map file, which maps module specifiers to file paths or URLs
+  "importMap": "import_map.json",
+
+  // Linting configuration
+  "lint": {
+    // Directories to include when running 'deno lint'
+    "include": ["src/", "examples/"]
+  },
+
+  // Formatting configuration
+  "fmt": {
+    "files": {
+      // Directories to include when running 'deno fmt'
+      "include": ["src/"]
+    }
+  }
+} 

@@ -1,6 +1,6 @@
 # lambda-calculus
 
-A trivial exploration of lambda calculus in typescript
+Lambda calculus in typescript
 
 So far includes:
   - Identity
@@ -9,7 +9,3 @@ So far includes:
       - true
       - false
       - if
-
-To run in node:
-
-    bash run <filename.ts>

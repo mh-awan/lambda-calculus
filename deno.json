@@ -1,0 +1,11 @@
+{
+  "importMap": "import_map.json",
+  "lint": {
+    "include": ["src/", "examples/"]
+  },
+  "fmt": {
+    "files": {
+      "include": ["src/"]
+    }
+  }
+} 

@@ -1,0 +1,1 @@
+export type ChurchBoolean<T> = (x: T) => (y: T) => T;
